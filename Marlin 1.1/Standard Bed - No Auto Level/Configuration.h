@@ -490,11 +490,11 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -17
-#define Y_MIN_POS -70
-#define Z_MIN_POS 0
-#define X_MAX_POS 220
-#define Y_MAX_POS 220
+#define X_MIN_POS 23
+#define Y_MIN_POS 6
+#define Z_MIN_POS -0.8
+#define X_MAX_POS 175
+#define Y_MAX_POS 185
 #define Z_MAX_POS 185
 
 //===========================================================================
@@ -651,9 +651,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // Manual homing switch locations:
 // For deltabots this means top and center of the Cartesian print volume.
 #if ENABLED(MANUAL_HOME_POSITIONS)
-  #define MANUAL_X_HOME_POS 0
-  #define MANUAL_Y_HOME_POS -70
-  #define MANUAL_Z_HOME_POS 0
+  #define MANUAL_X_HOME_POS -18
+  #define MANUAL_Y_HOME_POS -44
+  #define MANUAL_Z_HOME_POS 2
   //#define MANUAL_Z_HOME_POS 402 // For delta: Distance between nozzle and print surface after homing.
 #endif
 
@@ -668,8 +668,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-    #define Z_SAFE_HOMING_X_POINT 0   // X point for Z homing when homing all axis (G28).
-    #define Z_SAFE_HOMING_Y_POINT -70 // Y point for Z homing when homing all axis (G28).
+    #define Z_SAFE_HOMING_X_POINT -18   // X point for Z homing when homing all axis (G28).
+    #define Z_SAFE_HOMING_Y_POINT -44 // Y point for Z homing when homing all axis (G28).
 #endif
 
 
