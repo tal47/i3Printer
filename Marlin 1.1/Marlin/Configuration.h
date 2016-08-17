@@ -652,7 +652,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 #if ENABLED(MANUAL_HOME_POSITIONS)
   #define MANUAL_X_HOME_POS -18
   #define MANUAL_Y_HOME_POS -44
-  #define MANUAL_Z_HOME_POS 2
+  #define MANUAL_Z_HOME_POS 2.4
   //#define MANUAL_Z_HOME_POS 402 // For delta: Distance between nozzle and print surface after homing.
 #endif
 
@@ -682,7 +682,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,398.269957,101.640122273} // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,398.269957,96.440122273} // default steps per unit for Ultimaker
 #define DEFAULT_MAX_FEEDRATE          {225, 225, 10, 25}   // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1590,1590,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
