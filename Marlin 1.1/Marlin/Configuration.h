@@ -461,7 +461,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR true
+#define INVERT_X_DIR false
 #define INVERT_Y_DIR false
 #define INVERT_Z_DIR true
 
@@ -471,7 +471,6 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 #define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
-#define INVERT_E3_DIR false
 
 // @section homing
 #define MIN_Z_HEIGHT_FOR_HOMING 4 // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
@@ -492,7 +491,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // Travel limits after homing (units are in mm)
 #define X_MIN_POS 23
 #define Y_MIN_POS 6
-#define Z_MIN_POS -0.2
+#define Z_MIN_POS 0
 #define X_MAX_POS 175
 #define Y_MAX_POS 185
 #define Z_MAX_POS 185
@@ -653,7 +652,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 #if ENABLED(MANUAL_HOME_POSITIONS)
   #define MANUAL_X_HOME_POS -18
   #define MANUAL_Y_HOME_POS -44
-  #define MANUAL_Z_HOME_POS 1.4
+  #define MANUAL_Z_HOME_POS 2
   //#define MANUAL_Z_HOME_POS 402 // For delta: Distance between nozzle and print surface after homing.
 #endif
 
