@@ -247,9 +247,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
-   #define  DEFAULT_Kp 29.12
-   #define  DEFAULT_Ki 3.22
-   #define  DEFAULT_Kd 65.83
+   #define  DEFAULT_Kp 23.03
+   #define  DEFAULT_Ki 1.29
+   #define  DEFAULT_Kd 102.46
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -652,7 +652,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 #if ENABLED(MANUAL_HOME_POSITIONS)
   #define MANUAL_X_HOME_POS -18
   #define MANUAL_Y_HOME_POS -44
-  #define MANUAL_Z_HOME_POS -0.2
+  #define MANUAL_Z_HOME_POS 0
   //#define MANUAL_Z_HOME_POS 402 // For delta: Distance between nozzle and print surface after homing.
 #endif
 
