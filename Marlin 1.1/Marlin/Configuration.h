@@ -667,8 +667,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-    #define Z_SAFE_HOMING_X_POINT -18   // X point for Z homing when homing all axis (G28).
-    #define Z_SAFE_HOMING_Y_POINT -44 // Y point for Z homing when homing all axis (G28).
+    #define Z_SAFE_HOMING_X_POINT 0   // X point for Z homing when homing all axis (G28).
+    #define Z_SAFE_HOMING_Y_POINT 30 // Y point for Z homing when homing all axis (G28).
 #endif
 
 
